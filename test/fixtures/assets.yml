@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  name: MyString
+  url: MyString
+  coment_count: 1
+  fb_like_count: 1
+  fb_share_count: 1
+  linkedin_share_count: 1
+  pinterest_pin_count: 1
+  pinterest_follower_count: 1
+  pinterest_like_count: 1
+  tweet_count: 1
+  instagram_follower_count: 1
+  instagram_like_count: 1
+  campaign_name: MyString
+  rights_version: MyString
+  campaign_id: 
+
+two:
+  type: 
+  name: MyString
+  url: MyString
+  coment_count: 1
+  fb_like_count: 1
+  fb_share_count: 1
+  linkedin_share_count: 1
+  pinterest_pin_count: 1
+  pinterest_follower_count: 1
+  pinterest_like_count: 1
+  tweet_count: 1
+  instagram_follower_count: 1
+  instagram_like_count: 1
+  campaign_name: MyString
+  rights_version: MyString
+  campaign_id: 

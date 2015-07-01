@@ -1,0 +1,82 @@
+<p>
+  <strong>Title:</strong>
+  <%= @campaign.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @campaign.text %>
+</p>
+
+<h2>Add an asset:</h2>
+<%= form_for([@campaign, @campaign.assets.build]) do |f| %>
+
+  <p>
+    <%= f.label :campaign_name %><br>
+    <%= f.text_field :campaign_name %>
+  </p>
+  <p>
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
+  </p>
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_area :url %>
+  </p>
+  <p>
+    <%= f.label :rights_version %><br>
+    <%= f.text_field :rights_version %>
+  </p>  
+  <p>
+    <%= f.label :coment_count %><br>
+    <%= f.text_area :coment_count %>
+  </p>  
+
+  <p>
+    <%= f.label :fb_like_count %><br>
+    <%= f.text_area :fb_like_count %>
+  </p> 
+  <p>
+    <%= f.label :fb_share_count %><br>
+    <%= f.text_area :fb_share_count %>
+  </p> 
+  <p>
+    <%= f.label :linkedin_share_count %><br>
+    <%= f.text_area :linkedin_share_count %>
+  </p> 
+  <p>
+    <%= f.label :pinterest_pin_count %><br>
+    <%= f.text_area :pinterest_pin_count %>
+  </p> 
+  <p>
+    <%= f.label :pinterest_follower_count %><br>
+    <%= f.text_area :pinterest_follower_count %>
+  </p> 
+  <p>
+    <%= f.label :pinterest_like_count %><br>
+    <%= f.text_area :pinterest_like_count %>
+  </p> 
+  <p>
+    <%= f.label :tweet_count %><br>
+    <%= f.text_area :tweet_count %>
+  </p> 
+  <p>
+    <%= f.label :instagram_follower_count %><br>
+    <%= f.text_area :instagram_follower_count %>
+  </p> 
+  <p>
+    <%= f.label :instagram_like_count %><br>
+    <%= f.text_area :instagram_like_count %>
+  </p> 
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_campaign_path(@campaign) %> | 
+<%= link_to 'Back', campaigns_path %>
